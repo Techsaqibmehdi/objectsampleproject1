@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+   <div id="box1" class="container1">
+    <h1 id="name1">Name</h1>
+    <h1 id="email1">Email</h1>
+    <h1 id="phone1">Phone</h1>
+   </div>
+   <div id="box1" class="container2">
+    <h1 id="name2">Name</h1>
+    <h1 id="email2">Email</h1>
+    <h1 id="phone2">Phone</h1>
+   </div> 
+</div>
+<script>
+const data1=["Saqib", "saqib79@gmail.com", "8802835724"];
+const data2={Name: "saqib", Email: "saqib79@gmail.com", Phone: "8802835724"};
+document.getElementById('name1').innerHTML=data1[0];
+document.getElementById('email1').innerHTML=data1[1];
+document.getElementById('phone1').innerHTML=data1[2];
+
+document.getElementById('name2').innerHTML=data2.Name;
+document.getElementById('email2').innerHTML=data2.Email;
+document.getElementById('phone2').innerHTML=data2.Phone;
+
+
+</script>
+</body>
+</html>
